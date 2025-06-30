@@ -1,0 +1,93 @@
+{
+  "name": "drawlines",
+  "displayName": "DrawLines",
+  "description": "Draw Lines Using Unicode Characters!",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "drawlines.start",
+        "title": "Start Drawing"
+      },
+      {
+        "command": "drawlines.left",
+        "title": "Move Left"
+      },
+      {
+        "command": "drawlines.right",
+        "title": "Move Right"
+      },
+      {
+        "command": "drawlines.up",
+        "title": "Move Up"
+      },
+      {
+        "command": "drawlines.down",
+        "title": "Move Down"
+      },
+      {
+        "command": "drawlines.exit",
+        "title": "Exit Drawing Mode"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "drawlines.start",
+        "key": "ctrl+shift+d",
+        "when": "drawlines.mode != active"
+      },
+      {
+        "command": "drawlines.left",
+        "key": "left",
+        "when": "drawlines.mode == active"
+      },
+      {
+        "command": "drawlines.right",
+        "key": "right",
+        "when": "drawlines.mode == active"
+      },
+      {
+        "command": "drawlines.up",
+        "key": "up",
+        "when": "drawlines.mode == active"
+      },
+      {
+        "command": "drawlines.down",
+        "key": "down",
+        "when": "drawlines.mode == active"
+      },
+      {
+        "command": "drawlines.exit",
+        "key": "escape",
+        "when": "drawlines.mode == active"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.101.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
