@@ -2,8 +2,9 @@
   "name": "drawlines",
   "displayName": "DrawLines",
   "description": "Draw Lines Using Unicode Characters!",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icon": "images/icon1.png",
+  "repository": "https://github.com/djlalo08/DrawLines",
   "engines": {
     "vscode": "^1.101.0"
   },
