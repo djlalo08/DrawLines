@@ -3,6 +3,7 @@
   "displayName": "DrawLines",
   "description": "Draw Lines Using Unicode Characters!",
   "version": "0.0.2",
+  "icon": "images/icon1.png",
   "engines": {
     "vscode": "^1.101.0"
   },

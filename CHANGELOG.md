@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.0.3
+
+### Changed
+
+- Updates to README.md
+
 ## 0.0.2
 
 ### Changed

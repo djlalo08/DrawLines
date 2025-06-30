@@ -1,10 +1,20 @@
 # README
 
 Draw Lines using standard unicode characters within VS Code!
+![Example!](images/gif1.gif)
 
 ## Features
 
 Draw Lines using standard unicode characters within VS Code!
+
+
+## How To Use
+
+To begin, open a text file with sufficient empty whitespace. This is Your canvas.
+
+1. Enter the `Start Drawing` command (default shortcut is Ctrl+Shift+D).
+2. Use the arrow keys to draw a single contiguous path.
+3. When done, use `Exit Drawing Mode` (Escape) to exit drawing mode
 
 ## Requirements
 
@@ -16,14 +26,12 @@ No settings
 
 ## Known Issues
 
-If You have the Vim extension installed and active toggled off, entering drawMode will cause You to enter Vim mode at the same time and line drawing won't work correctly.
+### Compatibility
+
+Vim: 
+
+ - If You have the Vim extension installed and active, but toggled off, entering drawMode will cause You to enter Vim mode at the same time and line drawing won't work correctly.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+See [CHANGELOG.md](CHANGELOG.md) for notes
